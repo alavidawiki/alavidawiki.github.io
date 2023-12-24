@@ -1,1 +1,10 @@
-html {}
+html {
+padding: 0;
+}
+
+body {
+padding: 0;
+background-color: #1E0C1B;
+color: white;
+text-align: center;
+}
