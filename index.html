@@ -4,6 +4,13 @@
 <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
+    <script src="corefunc.js"></script>
+    <script>
+        var red = GetURLParameter('redirect');
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && red !== '0') {
+            window.location.replace("m")
+        }
+    </script>
 <h1>Quality Check</h1><br>
 <h2>ImgBB</h2>
 <img src="https://i.ibb.co/Tmg291p/Screenshot-2023-12-22-22-24-20-853-com-duckduckgo-mobile-android.png">
