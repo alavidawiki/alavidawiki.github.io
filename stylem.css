@@ -1,0 +1,62 @@
+header {
+    padding: 3vw;
+    box-shadow: 0 -2vw 5vw 2vw black;
+}
+
+#logo_container {
+    padding: 0.5vw;
+    text-align: center;
+}
+
+#logo_image {
+    height: 20vw;
+    margin: 2vw;
+}
+
+#logo_title {
+    font-size: 10vw;
+    margin: 1vw;
+    padding-bottom: 1vw;
+}
+
+#link_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4vw 2vw;
+}
+
+.header_link {
+    color: yellow;
+    font-size: 4.5vw;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media(min-width: 1280px){
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #logo_image {
+        height: 10vw;
+    }
+
+    #logo_title {
+        font-size: 6vw;
+    }
+
+    #link_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2vw;
+    }
+
+    .header_link {
+        color: yellow;
+        font-size: 3vw;
+        text-decoration: none;
+        font-weight: 600;
+    }
+}

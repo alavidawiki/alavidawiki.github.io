@@ -1,0 +1,60 @@
+header {
+    display: flex;
+    padding: 0.5vw;
+    align-items: flex-end;
+    box-shadow: 0 -1vw 1vw 1vw black;
+}
+
+#logo_container {
+    display: flex;
+    padding: 0.25vw;
+    align-items: center;
+    cursor: pointer;
+    width: 25vw;
+}
+
+#logo_image {
+    display: block;
+    height: 3.5vw;
+    margin: 0.25vw;
+    transition: 0.5s;
+}
+
+#logo_title {
+    font-size: 2vw;
+    margin: 0.25vw;
+    transition: 0.5s;
+}
+
+#logo_container:hover #logo_title {
+    scale: 1.05;
+    text-shadow: 0 0 1vw white;
+}
+
+#logo_container:hover #logo_image {
+    scale: 0.8;
+}
+
+#link_container {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_link {
+    margin: 0.5vw 1vw 0.5vw 1vw;
+    color: yellow;
+    font-size: 1vw;
+    text-decoration: none;
+    transition: 0.4s;
+    font-weight: 500;
+}
+
+.header_link:hover {
+    color: #ffffaa;
+    scale: 1.25;
+}
+
+#content {
+    padding: 2vw;
+}
