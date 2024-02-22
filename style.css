@@ -43,3 +43,17 @@ header {
 #content {
     text-align: left;
 }
+
+.link {
+    display: inline-block;
+}
+
+#categories {
+    text-align: center;
+}
+
+.section {
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+}

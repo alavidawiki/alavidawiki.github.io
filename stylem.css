@@ -66,5 +66,85 @@ header {
 }
 
 .text {
-    font-size: 30px;
+    font-size: 35px;
+}
+
+.link {
+    font-weight: 600;
+    text-decoration: none;
+    color: yellow;
+}
+
+.sectionheader {
+    font-size: 65px;
+}
+
+#sections {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 40vw);
+    grid-gap: 5vw;
+}
+
+.section {
+    width: 1fr;
+    height: 40vw;
+    border: solid white 3px;
+    border-radius: 5vw;
+    background-size: 40vw;
+    box-shadow: 0 0 15vw 1vw black inset;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-shadow: 0 0 2vw black, 0 0 2vw black, 0 0 5vw black;
+    font-size: 2.5vw;
+}
+
+#gridlist {
+    margin-top: 8vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5vw 5vw;
+}
+
+.glistitem {
+    font-size: 40px;
+    font-weight: 500;
+    color: yellow;
+    text-decoration: none;
+}
+
+@media(min-width: 1280px) {
+    #sections {
+        display: inline-grid;
+        grid-template-columns: repeat(3, 27.5vw);
+        grid-gap: 3vw;
+    }
+
+    .section {
+        width: 1fr;
+        height: 27.5vw;
+        border: solid white 3px;
+        border-radius: 4vw;
+        background-size: 25vw;
+        box-shadow: 0 0 8vw 0.75vw black inset;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-shadow: 0 0 1.5vw black, 0 0 1.5vw black, 0 0 3vw black;
+        font-size: 1.5vw;
+    }
+
+    #gridlist {
+        margin-top: 3vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw 5vw;
+    }
+
+    .glistitem {
+        font-size: 50px;
+        font-weight: 500;
+        color: yellow;
+        text-decoration: none;
+    }
 }

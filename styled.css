@@ -62,3 +62,67 @@ header {
 .text {
     font-size: 18px;
 }
+
+.link {
+    font-weight: 600;
+    text-decoration: none;
+    color: yellow;
+    transition: 0.2s;
+}
+
+.link:hover {
+    color: white;
+    text-shadow: 0 0 5px black, 0 0 10px yellow;
+    scale: 1.03;
+}
+
+.sectionheader {
+    font-size: 40px;
+}
+
+#sections {
+    display: inline-grid;
+    grid-template-columns: repeat(5, 15vw);
+    grid-gap: 2vw;
+}
+
+.section {
+    width: 1fr;
+    height: 15vw;
+    border: solid white 1px;
+    border-radius: 2vw;
+    background-size: 14vw;
+    transition: 0.4s;
+    box-shadow: 0 0 5vw 0.5vw black inset;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 10px black;
+    cursor: pointer;
+    font-size: 0.75vw;
+}
+
+    .section:hover {
+        border: solid yellow 1px;
+        background-size: 20vw;
+        color: yellow;
+    }
+
+#gridlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw 5vw;
+}
+
+.glistitem {
+    font-size: 30px;
+    font-weight: 500;
+    color: yellow;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.glistitem:hover {
+    color: darkgoldenrod;
+    text-shadow: 0 0 4px blue;
+}
