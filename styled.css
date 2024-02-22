@@ -58,3 +58,7 @@ header {
 #content {
     padding: 2vw;
 }
+
+.text {
+    font-size: 18px;
+}

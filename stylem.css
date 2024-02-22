@@ -60,3 +60,11 @@ header {
         font-weight: 600;
     }
 }
+
+#content {
+    padding: 4vw;
+}
+
+.text {
+    font-size: 30px;
+}
