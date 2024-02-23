@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    padding: 0.25vw;
+    align-items: flex-end;
+}
+
+#logo_container {
+    display: flex;
+    padding: 0.25vw;
+    align-items: center;
+    cursor: pointer;
+    width: 25vw;
+}
+
+#logo_image {
+    display: block;
+    height: 2vw;
+    margin: 0.2vw;
+    transition: 0.5s;
+}
+
+#logo_title {
+    font-size: 1.5vw;
+    margin: 0.2vw;
+    transition: 0.5s;
+}
+
+#logo_container:hover #logo_title {
+    scale: 1.05;
+    text-shadow: 0 0 0.5vw white;
+}
+
+#link_container {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_link {
+    margin: 0.2vw 0.5vw 0.2vw 0.5vw;
+    color: yellow;
+    font-size: 0.75vw;
+    text-decoration: none;
+    transition: 0.4s;
+    font-weight: 400;
+}
+
+    .header_link:hover {
+        color: #ffffaa;
+        scale: 1.2;
+    }
+
+#countrygrid {
+    display: grid;
+    grid-template-columns: 15vw 1fr;
+    grid-template-rows: 100%;
+    height: calc(100vh - 3.4vw);
+}

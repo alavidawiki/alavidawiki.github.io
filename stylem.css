@@ -148,3 +148,63 @@ header {
         text-decoration: none;
     }
 }
+
+.hidden {
+    display: none;
+}
+
+#ccontent {
+    overflow-y: auto;
+    padding: 4vw;
+}
+
+#quickaccess {
+    overflow-y: auto;
+    position: fixed;
+    z-index: 150;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    height: 100vh;
+    opacity: 95%;
+}
+
+#quickaccessTitle {
+    font-size: 50px;
+}
+
+#togglenavs {
+    position: fixed;
+    z-index: 155;
+    padding: 1vw;
+    top: 0;
+    left: 0;
+}
+
+#quickaccessContent {
+    padding-left: 11vw;
+    padding-right: 11vw;
+}
+
+.quickn {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.indent_1 {
+    padding-left: 3vw;
+}
+
+.indent_2 {
+    padding-left: 6vw;
+}
+
+.indent_3 {
+    padding-left: 9vw;
+}
+
+#articleTitle {
+    font-size: 5vw;
+    text-align: center;
+    margin: 0.25em 0 0.25em 0;
+}

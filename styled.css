@@ -2,7 +2,6 @@ header {
     display: flex;
     padding: 0.5vw;
     align-items: flex-end;
-    box-shadow: 0 -1vw 1vw 1vw black;
 }
 
 #logo_container {
@@ -57,6 +56,7 @@ header {
 
 #content {
     padding: 2vw;
+    box-shadow: 0 1vw 1vw -1vw black inset;
 }
 
 .text {
@@ -125,4 +125,89 @@ header {
 .glistitem:hover {
     color: darkgoldenrod;
     text-shadow: 0 0 4px blue;
+}
+
+#countrygrid {
+    display: grid;
+    grid-template-columns: 15vw 1fr;
+    grid-template-rows: 100%;
+    height: calc(100vh - 5.5vw);
+}
+
+#ccontent {
+    padding: 2vw;
+    box-shadow: 1vw 1vw 1vw -1vw black inset;
+    overflow-y: auto;
+}
+
+#quickaccess {
+    overflow-y: auto;
+}
+
+#quickaccessTitle {
+    font-size: 18px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+#togglenavs {
+    display: none;
+}
+
+#quickaccessContent {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#quickaccess::-webkit-scrollbar-track {
+    background: #161240;
+}
+
+#quickaccess::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 100px;
+    border: solid 3px #161240;
+}
+
+    #quickaccess::-webkit-scrollbar-thumb:hover {
+        background: yellow;
+    }
+
+#quickaccess::-webkit-scrollbar-corner {
+    background: #161240;
+}
+
+.quickn {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.indent_1 {
+    padding-left: 10px;
+}
+
+.indent_2 {
+    padding-left: 20px;
+}
+
+.indent_3 {
+    padding-left: 30px;
+}
+
+#articleTitle {
+    font-size: 40px;
+    margin: 0.25em 0 0.25em 0;
+}
+
+#overview {
+    display: grid;
+    grid-template-columns: 1fr 25vw;
+    grid-template-areas: "text bar";
+}
+
+#overviewbar {
+    border: solid 1px;
+    border-radius: 2vw;
+    margin-top: 1vw;
+    padding: 0.25vw;
 }

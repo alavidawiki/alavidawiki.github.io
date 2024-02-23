@@ -18,7 +18,7 @@
     }
 
 ::-webkit-scrollbar-corner {
-    background: #333;
+    background: #1E0C1B;
 }
 
 
@@ -56,4 +56,39 @@ header {
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#quickaccess {
+    background-color: #161240;
+    padding: 0;
+}
+
+#ccontent {
+    text-align: left;
+}
+
+#quickaccessTitle {
+    width: 100%;
+    text-align: center;
+}
+
+#quickaccessContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.quickn {
+    display: block;
+    color: #eee;
+}
+
+#overviewbar {
+    grid-area: bar;
+    border-color: gold;
+    height: fit-content;
+}
+
+#overviewtext {
+    grid-area: text;
 }
