@@ -357,3 +357,12 @@ header {
     }
 }
 
+.sectiontitle {
+    font-size: 55px;
+}
+
+.sectionheading {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

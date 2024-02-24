@@ -180,7 +180,14 @@ header {
 .quickn {
     font-size: 20px;
     margin-top: 5px;
+    text-decoration-thickness: 1px;
+    transition: 0.2s;
 }
+
+    .quickn:hover {
+        scale: 1.1;
+        color: white;
+    }
 
 .indent_1 {
     padding-left: 10px;
@@ -312,3 +319,12 @@ header {
     font-weight: 800;
 }
 
+.sectiontitle {
+    font-size: 28px;
+}
+
+.sectionheading {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
