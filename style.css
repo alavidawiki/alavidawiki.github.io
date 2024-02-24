@@ -92,3 +92,7 @@ header {
 #overviewtext {
     grid-area: text;
 }
+
+.obtop {
+    color: black;
+}

@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styled.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\stylem.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:stylem.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\countries\\stanovia.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:countries\\stanovia.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\stylem.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:stylem.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -36,20 +36,28 @@
               "RelativeDocumentMoniker": "countries\\stanovia.html",
               "ToolTip": "C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\countries\\stanovia.html",
               "RelativeToolTip": "countries\\stanovia.html",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADsAAAAUAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAGAAAACRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-02-23T13:04:24.599Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\style.css",
               "RelativeDocumentMoniker": "style.css",
               "ToolTip": "C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\style.css",
               "RelativeToolTip": "style.css",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAFcAAAAKAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAGAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-02-23T13:04:05.129Z",
               "EditorCaption": ""
@@ -62,20 +70,20 @@
               "RelativeDocumentMoniker": "styled.css",
               "ToolTip": "C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\styled.css",
               "RelativeToolTip": "styled.css",
-              "ViewState": "AQIAAKEAAAAAAAAAAAAqwNEAAAAXAAAA",
+              "ViewState": "AQIAABgBAAAAAAAAAAAawDoBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-02-23T13:04:06.445Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "stylem.css",
               "DocumentMoniker": "C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\stylem.css",
               "RelativeDocumentMoniker": "stylem.css",
               "ToolTip": "C:\\Users\\Kingpvz\\Documents\\GitHub\\alavidawiki.github.io\\stylem.css",
               "RelativeToolTip": "stylem.css",
-              "ViewState": "AQIAAKgAAAAAAAAAAAAawM4AAAAQAAAA",
+              "ViewState": "AQIAAEUBAAAAAAAAAAAawGcBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-02-23T13:04:07.17Z",
               "EditorCaption": ""
