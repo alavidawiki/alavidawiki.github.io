@@ -328,3 +328,45 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1fr;
+    padding: 0.5vw 5vw 1.5vw 5vw;
+}
+
+li {
+    font-size: 20px;
+}
+
+table, th, td {
+    border: 1px solid #22a;
+    border-collapse: collapse;
+    vertical-align: central;
+}
+
+table {
+    width: 100%;
+    position: relative;
+}
+
+th {
+    width: 1fr;
+    text-align: center;
+    padding: 8px;
+    background-color: #22a;
+    font-size: 22px;
+    position: sticky;
+    top: -2.1vw;
+}
+
+caption {
+    margin-bottom: 1vw;
+    font-style: italic;
+}
+
+td {
+    padding: 8px;
+    font-size: 18px;
+}

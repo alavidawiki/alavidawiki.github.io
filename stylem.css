@@ -1,3 +1,7 @@
+* {
+    scroll-margin: 10vw;
+}
+
 header {
     padding: 3vw;
     box-shadow: 0 -2vw 5vw 2vw black;
@@ -355,6 +359,11 @@ header {
         font-size: 40px;
         line-height: 50px;
     }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .sectiontitle {
@@ -365,4 +374,45 @@ header {
     font-size: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+ul {
+    width: 1fr;
+    padding: 0.5vw 3vw 1.5vw 3vw;
+}
+
+li {
+    font-size: 38px;
+}
+
+table, th, td {
+    border: 1px solid #22a;
+    border-collapse: collapse;
+    vertical-align: central;
+}
+
+table {
+    width: 100%;
+    position: relative;
+}
+
+th {
+    width: 1fr;
+    text-align: center;
+    padding: 12px;
+    background-color: #22a;
+    font-size: 30px;
+    position: sticky;
+    top: 0;
+}
+
+caption {
+    margin-bottom: 1vw;
+    font-style: italic;
+    font-size: 28px;
+}
+
+td {
+    padding: 10px;
+    font-size: 32px;
 }

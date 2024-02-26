@@ -24,7 +24,7 @@
 
 * {
     scroll-behavior: smooth;
-    scroll-padding: 0.5vh;
+    scroll-padding: 1vh;
 }
 
 html {
@@ -100,4 +100,8 @@ header {
 
 .obtop {
     color: black;
+}
+
+.singleunit {
+    display: inline-block;
 }
