@@ -24,6 +24,7 @@
 
 * {
     scroll-behavior: smooth;
+    scroll-padding: 0.5vh;
 }
 
 html {
