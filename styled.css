@@ -182,6 +182,7 @@ header {
     margin-top: 5px;
     text-decoration-thickness: 1px;
     transition: 0.2s;
+    text-align: left;
 }
 
     .quickn:hover {
