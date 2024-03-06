@@ -36,7 +36,7 @@ header {
     font-weight: 600;
 }
 
-@media(min-width: 720px){
+@media(min-width: 1120px){
     header {
         display: flex;
         align-items: center;
@@ -117,7 +117,7 @@ header {
     text-decoration: none;
 }
 
-@media(min-width: 720px) {
+@media(min-width: 1120px) {
     #sections {
         display: inline-grid;
         grid-template-columns: repeat(3, 27.5vw);
@@ -298,7 +298,7 @@ header {
     line-height: 50px;
 }
 
-@media(min-width:720px){
+@media(min-width:1120px){
     #overview {
         display: grid;
         grid-template-columns: 1fr 40vw;
