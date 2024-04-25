@@ -334,7 +334,9 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1fr;
-    padding: 0.5vw 5vw 1.5vw 5vw;
+    padding: 0.5vw 4vw 1.5vw 4vw;
+    grid-column-gap: 2vw;
+    grid-row-gap: 0.5vw;
 }
 
 li {
