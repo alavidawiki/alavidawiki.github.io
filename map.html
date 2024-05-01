@@ -7,21 +7,25 @@
     <link href="style.css" rel="stylesheet" />
 
     <script src="resources/corefunc.js"></script>
+    <script src="resources/maps.js"></script>
     <script>
         var v = GetURLParameter('view');
         if (v) {
             if (v === "pc") {
+                document.head.insertAdjacentHTML('afterbegin', '<link href="countries_styled_modification.css" rel="stylesheet"/>');
                 document.head.insertAdjacentHTML('afterbegin', '<link href="styled.css" rel="stylesheet"/>');
             } else if (v === "mobile") {
                 document.head.insertAdjacentHTML('afterbegin', '<link href="stylem.css" rel="stylesheet"/>');
             } else {
                 alert("'view' parameter has no value '" + v + "'.");
+                document.head.insertAdjacentHTML('afterbegin', '<link href="countries_styled_modification.css" rel="stylesheet"/>');
                 document.head.insertAdjacentHTML('afterbegin', '<link href="styled.css" rel="stylesheet"/>');
             }
         } else {
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 document.head.insertAdjacentHTML('afterbegin', '<link href="stylem.css" rel="stylesheet"/>');
             } else {
+                document.head.insertAdjacentHTML('afterbegin', '<link href="countries_styled_modification.css" rel="stylesheet"/>');
                 document.head.insertAdjacentHTML('afterbegin', '<link href="styled.css" rel="stylesheet"/>');
             }
         }
@@ -35,8 +39,106 @@
     <script>
         document.body.appendChild(T_header.content);
     </script>
-    <div id="content">
+    <div id="countrygrid">
+        <div id="quickaccess" class="hidden">
+            <h6 id="quickaccessTitle">Choose map:</h6>
+            <div id="quickaccessContent" onclick="document.querySelector('#quickaccess').classList.toggle('hidden');">
 
+                <button class="quickaccessButton activeButton" id="button_political" onclick="swapMap('political')">Political Map</button>
+                <button class="quickaccessButton" id="button_islands" onclick="swapMap('islands')">Islands</button>
+                <button class="quickaccessButton" id="button_seas" onclick="swapMap('seas')">Seas and Straits</button>
+
+            </div>
+        </div>
+        <div id="togglenavs" onclick="document.querySelector('#quickaccess').classList.toggle('hidden');">
+            <img src="https://www.pinclipart.com/picdir/big/532-5328945_menu-bar-icon-white-clipart-png-download-menu.png" style="width:10vw;" />
+        </div>
+        <div id="ccontent">
+            <p class="mobileonlyall" style="margin: 0; font-size: 30px; width: 100%; text-align: center;">Use the menu button on your top left to change the map.</p>
+            <div id="map_political" class="mapcontent">
+
+                <div class="mapsbrowser">
+                    <div class="mapstoolbar hidden">
+                        <h2 class="toolbarh">Zoom Ratio</h2>
+                        <div class="toolbarflex">
+                            <h1 class="textbutton" onclick="zoomRatioDecrease()">-</h1>
+                            <h1 class="toolbartext" id="zoomratiotext1">1.5</h1>
+                            <h1 class="textbutton" onclick="zoomRatioIncrease()">+</h1>
+                        </div>
+                        <p class="toolbarexplain">The higher the zoom ratio, the lower the zoom on hover.</p>
+                    </div>
+                    <img class="mapsmap" id="politicalmap" />
+                    <a href="https://postimg.cc/WhcSzcvK" target="_blank"><img class="mobileonlyall mapsmap" src="https://i.postimg.cc/Wbhy9sf2/alavida-political-5-1-24.png" /></a>
+                    <p class="mobileonlyall toolbarexplain">Click on the image to see the full resolution.</p>
+                </div>
+                
+                <div class="linkgrid">
+
+                </div>
+
+            </div>
+            <div id="map_islands" style="display: none;" class="mapcontent">
+
+                <div class="mapsbrowser">
+                    <div class="mapstoolbar hidden">
+                        <h2 class="toolbarh">Zoom Ratio</h2>
+                        <div class="toolbarflex">
+                            <h1 class="textbutton" onclick="zoomRatioDecrease()">-</h1>
+                            <h1 class="toolbartext" id="zoomratiotext2">1.5</h1>
+                            <h1 class="textbutton" onclick="zoomRatioIncrease()">+</h1>
+                        </div>
+                        <p class="toolbarexplain">The higher the zoom ratio, the lower the zoom on hover.</p>
+                    </div>
+                    <img class="mapsmap" id="islandmap" />
+                    <a href="https://postimg.cc/s1tXX5gw" target="_blank"><img class="mobileonlyall mapsmap" src="https://i.postimg.cc/zXfRxjZZ/alavida-islands.png" /></a>
+                    <p class="mobileonlyall toolbarexplain">Click on the image to see the full resolution.</p>
+                </div>
+
+                <div class="linkgrid">
+
+                </div>
+
+            </div>
+            <div id="map_seas" style="display: none;" class="mapcontent">
+
+                <div class="mapsbrowser">
+                    <div class="mapstoolbar hidden">
+                        <h2 class="toolbarh">Zoom Ratio</h2>
+                        <div class="toolbarflex">
+                            <h1 class="textbutton" onclick="zoomRatioDecrease()">-</h1>
+                            <h1 class="toolbartext" id="zoomratiotext3">1.5</h1>
+                            <h1 class="textbutton" onclick="zoomRatioIncrease()">+</h1>
+                        </div>
+                        <p class="toolbarexplain">The higher the zoom ratio, the lower the zoom on hover.</p>
+                    </div>
+                    <img class="mapsmap" id="seamap" />
+                    <a href="https://postimg.cc/jLMRfNsp" target="_blank"><img class="mobileonlyall mapsmap" src="https://i.postimg.cc/JzL09cSz/alavida-seas-and-oceans.png" /></a>
+                    <p class="mobileonlyall toolbarexplain">Click on the image to see the full resolution.</p>
+                </div>
+
+                <div class="linkgrid">
+
+                </div>
+
+            </div>
+        </div>
     </div>
+
+    <script>
+        var maps = {
+            "political": document.getElementById("map_political"),
+            "islands": document.getElementById("map_islands"),
+            "seas": document.getElementById("map_seas")
+        }
+        var buttons = {
+            "political": document.getElementById("button_political"),
+            "islands": document.getElementById("button_islands"),
+            "seas": document.getElementById("button_seas")
+        }
+
+        var zoomRatioText1 = document.getElementById("zoomratiotext1");
+        var zoomRatioText2 = document.getElementById("zoomratiotext2");
+        var zoomRatioText3 = document.getElementById("zoomratiotext3");
+    </script>
 </body>
 </html>

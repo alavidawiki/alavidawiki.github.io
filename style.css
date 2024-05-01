@@ -110,3 +110,13 @@ header {
     color: yellow;
     text-decoration: none;
 }
+
+.quickaccessButton {
+    color: #ccc;
+    background-color: #202040;
+}
+
+.activeButton {
+    color: white;
+    background-color: #282d62;
+}

@@ -438,3 +438,27 @@ td {
     height: 2px;
     background: #aaa;
 }
+
+.quickaccessButton {
+    width: 95%;
+    margin: 2% 2.5%;
+    font-size: 40px;
+    border: 5px solid #2d311c;
+    border-radius: 30px;
+    padding: 2%;
+    font-weight: 500;
+    box-shadow: #bbb 0 0 10px;
+}
+
+.activeButton {
+    box-shadow: #fff 0 0 15px;
+    scale: 1.05;
+}
+
+.mapsmap {
+    width:100%;
+}
+
+.toolbarexplain {
+    font-size: 30px;
+}

@@ -297,7 +297,7 @@ header {
     margin-bottom: 0;
 }
 
-.mobileonly {
+.mobileonly, .mobileonlyall {
     display: none !important;
 }
 
@@ -388,4 +388,116 @@ td {
     width: 85%;
     height: 2px;
     background: #aaa;
+}
+
+.quickaccessButton {
+    width: 90%;
+    margin: 5%;
+    font-size: 25px;
+    border: 3px solid #2d311c;
+    border-radius: 15px;
+    padding: 5%;
+    font-weight: 700;
+    transition: 0.15s;
+    cursor: pointer;
+    box-shadow: #bbb 0 0 5px;
+}
+
+    .quickaccessButton:hover {
+        scale: 1.05;
+        box-shadow: #ddd 0 0 10px;
+    }
+
+.activeButton {
+    margin: 5% 0 5% 10%;
+    box-shadow: #fff 0 0 7px;
+    scale: 1.05;
+}
+
+    .activeButton:hover {
+        box-shadow: #fff 0 0 10px;
+    }
+
+.mapcontent {
+    width: 100%;
+    height: 100%;
+}
+
+.mapsbrowser {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mapstoolbar {
+    width: 20%;
+    text-align: center;
+}
+
+.mapsmap {
+    width: 75%;
+    margin: 0;
+    aspect-ratio: 100/65;
+    cursor: none;
+}
+
+#politicalmap {
+    background: url("https://i.postimg.cc/k9cdg4Qt/alavida-political-5-1-24.png");
+    background-position: center;
+    background-size: cover;
+}
+#islandmap {
+    background: url("https://i.postimg.cc/b8xHNCmJ/alavida-islands.png");
+    background-position: center;
+    background-size: cover;
+}
+#seamap {
+    background: url("https://i.postimg.cc/5bHzQs3L/IMG-20240122-164835.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.toolbarh {
+    font-size: 25px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.toolbarflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.toolbartext {
+    font-size: 28px;
+    margin: 1%;
+}
+
+.textbutton {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 5%;
+    transition: 0.1s;
+    cursor: pointer;
+    text-shadow: 0 0 3px black;
+    display: block;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+
+.textbutton:hover {
+    scale: 1.25;
+    background-color: #1c1b2e;
+}
+
+.textbutton:active {
+    background-color: darkslateblue;
 }
