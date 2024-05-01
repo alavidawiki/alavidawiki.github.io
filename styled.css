@@ -108,7 +108,7 @@ header {
         color: yellow;
     }
 
-#gridlist {
+.gridlist {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2vw 5vw;
@@ -242,9 +242,11 @@ header {
 }
 
 .obobjectimg {
-    width: 100%;
+    width: calc(100% - 4px);
     border-radius: 0.55vw;
     cursor: zoom-in;
+    border: solid black 2px;
+    box-shadow: white 0 0 5px;
 }
 
 .obobjectname {
@@ -372,4 +374,18 @@ caption {
 td {
     padding: 8px;
     font-size: 18px;
+}
+
+.sectionclaw {
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.customhr {
+    margin: 5px 5% 20px 0;
+    width: 85%;
+    height: 2px;
+    background: #aaa;
 }

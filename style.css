@@ -105,3 +105,8 @@ header {
 .singleunit {
     display: inline-block;
 }
+
+.reglink {
+    color: yellow;
+    text-decoration: none;
+}
