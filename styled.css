@@ -341,6 +341,10 @@ ul {
     grid-row-gap: 0.5vw;
 }
 
+ul.expanded {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 li {
     font-size: 20px;
 }
