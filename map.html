@@ -54,6 +54,7 @@
             <div id="quickaccessContent" onclick="document.querySelector('#quickaccess').classList.toggle('hidden');">
 
                 <button class="quickaccessButton activeButton" id="button_political" onclick="swapMap('political')">Political Map</button>
+                <button class="quickaccessButton" id="button_lingui" onclick="swapMap('lingui')">Linguistic Map</button>
                 <button class="quickaccessButton" id="button_islands" onclick="swapMap('islands')">Islands</button>
                 <button class="quickaccessButton" id="button_seas" onclick="swapMap('seas')">Seas and Straits</button>
 
@@ -80,7 +81,7 @@
                     <a href="https://postimg.cc/R3rWjNZ9" target="_blank"><img class="mobileonlyall mapsmap" src="https://i.postimg.cc/6QqC4Zs7/alavida-political.png" /></a>
                     <p class="mobileonlyall toolbarexplain">Click on the image to see the full resolution.</p>
                 </div>
-                
+
                 <div class="linkgrid">
 
                 </div>
@@ -130,6 +131,28 @@
                 </div>
 
             </div>
+            <div id="map_lingui" style="display: none;" class="mapcontent">
+
+                <div class="mapsbrowser">
+                    <div class="mapstoolbar hidden">
+                        <h2 class="toolbarh">Zoom Ratio</h2>
+                        <div class="toolbarflex">
+                            <h1 class="textbutton" onclick="zoomRatioDecrease()">-</h1>
+                            <h1 class="toolbartext" id="zoomratiotext4">1.5</h1>
+                            <h1 class="textbutton" onclick="zoomRatioIncrease()">+</h1>
+                        </div>
+                        <p class="toolbarexplain">The higher the zoom ratio, the lower the zoom on hover.</p>
+                    </div>
+                    <img class="mapsmap" id="linguimap" />
+                    <a href="https://postimg.cc/SjCLcmBK" target="_blank"><img class="mobileonlyall mapsmap" src="https://i.postimg.cc/1RYWhtMD/1746025534220.png" /></a>
+                    <p class="mobileonlyall toolbarexplain">Click on the image to see the full resolution.</p>
+                </div>
+
+                <div class="linkgrid">
+
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -137,17 +160,20 @@
         var maps = {
             "political": document.getElementById("map_political"),
             "islands": document.getElementById("map_islands"),
-            "seas": document.getElementById("map_seas")
+            "seas": document.getElementById("map_seas"),
+            "lingui": document.getElementById("map_lingui")
         }
         var buttons = {
             "political": document.getElementById("button_political"),
             "islands": document.getElementById("button_islands"),
-            "seas": document.getElementById("button_seas")
+            "seas": document.getElementById("button_seas"),
+            "lingui": document.getElementById("button_lingui")
         }
 
         var zoomRatioText1 = document.getElementById("zoomratiotext1");
         var zoomRatioText2 = document.getElementById("zoomratiotext2");
         var zoomRatioText3 = document.getElementById("zoomratiotext3");
+        var zoomRatioText4 = document.getElementById("zoomratiotext4");
     </script>
 </body>
 </html>

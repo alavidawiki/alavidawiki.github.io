@@ -460,6 +460,11 @@ td {
     background-position: center;
     background-size: cover;
 }
+#linguimap {
+    background: url("https://i.postimg.cc/1RYWhtMD/1746025534220.png");
+    background-position: center;
+    background-size: cover;
+}
 
 .toolbarh {
     font-size: 25px;

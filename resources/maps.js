@@ -5,9 +5,11 @@ function swapMap(id) {
     maps["political"].style.display = "none";
     maps["islands"].style.display = "none";
     maps["seas"].style.display = "none";
+    maps["lingui"].style.display = "none";
     buttons["political"].classList.remove("activeButton");
     buttons["islands"].classList.remove("activeButton");
     buttons["seas"].classList.remove("activeButton");
+    buttons["lingui"].classList.remove("activeButton");
 
     //OPEN ID//
     buttons[id].classList.add("activeButton");
@@ -43,6 +45,7 @@ function updateZoomRatioText() {
     zoomRatioText1.innerHTML = zoomRatio;
     zoomRatioText2.innerHTML = zoomRatio;
     zoomRatioText3.innerHTML = zoomRatio;
+    zoomRatioText4.innerHTML = zoomRatio;
 }
 
 
@@ -81,4 +84,5 @@ window.onload = () => {
     addZoom("politicalmap");
     addZoom("islandmap");
     addZoom("seamap");
+    addZoom("linguimap");
 }
