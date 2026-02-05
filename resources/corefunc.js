@@ -13,7 +13,7 @@ function GetURLParameter(sParam) {
 function population (obj) {
     if (typeof obj.population == "number") return obj.population;
     let result = 0;
-    for (const i in obj.states) {
+    for (const i of obj.states) {
         result += population(i);
     }
     return result;
@@ -21,7 +21,7 @@ function population (obj) {
 function area (obj) {
     if (typeof obj.area == "number") return obj.area;
     let result = 0;
-    for (const i in obj.states) {
+    for (const i of obj.states) {
         result += area(i);
     }
     return result;
@@ -35,4 +35,9 @@ function bigNumber(num) {
     const fracPart = parts[1] || '';
     intPart = intPart.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     return sign + intPart + (fracPart ? '.' + fracPart : '');
+}
+function gst(root, name) {
+    for (const i of root.states) {
+        if (String(i.name).toLowerCase() === String(name).toLowerCase()) return i;
+    }
 }
